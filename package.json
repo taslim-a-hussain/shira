@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "UI components",
   "main": "lib/index.js",
-  "repository": "git@github.com:taslim-a-hussain/uibox.git",
+  "repository": "git@github.com:taslim-a-hussain/shira.git",
   "author": "Taslim A Hussain",
   "license": "MIT",
   "files": [
