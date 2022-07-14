@@ -1,11 +1,13 @@
 {
   "name": "shira",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "UI components",
-  "main": "lib/index.js",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
   "repository": "git@github.com:taslim-a-hussain/shira.git",
   "author": "Taslim A Hussain",
   "license": "MIT",
+  "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
@@ -25,7 +27,9 @@
     "postcss": "^8.4.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rimraf": "^3.0.2",
     "rollup": "^2.76.0",
+    "rollup-plugin-dts": "^4.2.2",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript2": "^0.32.1",
@@ -38,6 +42,7 @@
   },
   "dependencies": {},
   "scripts": {
+    "prebuild": "rimraf lib",
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"

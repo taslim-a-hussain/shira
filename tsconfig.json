@@ -12,7 +12,7 @@
     /* Emit */
     "outDir": "lib",
     "declaration": true,                              /* Generate .d.ts files from TypeScript and JavaScript files in your project. */
-    "declarationDir": "lib",
+    "declarationDir": "lib/types",
     "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
@@ -24,6 +24,6 @@
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
   "include": [
-    "src"
+    "src/index.ts"
   ]
 }
