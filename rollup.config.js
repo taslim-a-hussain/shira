@@ -1,6 +1,7 @@
 
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import resolve from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
 import typescript from 'rollup-plugin-typescript2';
 import postcss from 'rollup-plugin-postcss';
 import {uglify} from 'rollup-plugin-uglify';
@@ -23,13 +24,11 @@ export default [
         plugins: [
             peerDepsExternal(),
             resolve(),
+            commonjs(),
             typescript({
-                tsconfig: 'tsconfig.json',
                 useTsconfigDeclarationDir: true
             }),
-            postcss({
-                extensions: ['.css']
-            }),
+            postcss(),
             uglify(),
             babel({ babelHelpers: 'bundled' })
         ]
@@ -37,7 +36,7 @@ export default [
     {
         input: 'lib/types/index.d.ts',
         output: [{ file: 'lib/index.d.ts', format: "esm" }],
-        external: [/\.css$/],
+        external: [/\.scss$/],
         plugins: [dts()]
     }
 ]
