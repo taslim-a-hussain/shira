@@ -42,6 +42,7 @@
     "sass": "^1.53.0",
     "sass-loader": "^13.0.2",
     "style-loader": "^3.3.1",
+    "typed-scss-modules": "^6.5.0",
     "typescript": "^4.7.4"
   },
   "peerDependencies": {
@@ -53,6 +54,7 @@
     "prebuild": "rimraf lib",
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "typed-scss": "typed-scss-modules src/scss"
   }
 }
