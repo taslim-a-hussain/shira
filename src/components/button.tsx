@@ -1,3 +1,4 @@
+import { cap } from 'gokit';
 import React from 'react';
 import style from '../scss/button/index.module.scss';
 
@@ -14,7 +15,7 @@ export interface ButtonProps {
   /**
    * How large should the button be?
    */
-  size?: 'Small' | 'Medium' | 'Large';
+  size?: 'small' | 'medium' | 'large';
   /**
    * Button contents
    */
@@ -28,12 +29,12 @@ export interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({primary = false, size = 'Medium', backgroundColor, label, ...props}: ButtonProps) => {
+export const Button = ({primary = false, size = 'medium', backgroundColor, label, ...props}: ButtonProps) => {
   const mode = primary ? style['storybookButtonPrimary'] : style['storybookButtonSecondary'];
   return (
     <button
       type="button"
-      className={`${style['storybookButton']} ${style[`storybookButton${size}`]} ${mode}`}
+      className={`${style['storybookButton']} ${style[`storybookButton${cap(size)}`]} ${mode}`}
       style={{ backgroundColor }}
       {...props}
     >

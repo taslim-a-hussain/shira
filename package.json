@@ -49,7 +49,9 @@
     "react": ">=16.14.0",
     "react-dom": ">=16.14.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "gokit": "^1.0.4"
+  },
   "scripts": {
     "prebuild": "rimraf lib",
     "build": "rollup -c",

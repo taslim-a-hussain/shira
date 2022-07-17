@@ -6175,6 +6175,11 @@ globule@^1.0.0:
     lodash "^4.17.21"
     minimatch "~3.0.2"
 
+gokit@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/gokit/-/gokit-1.0.4.tgz#c311e9cc0025adbbdbf037b339ab08c2d91a4a38"
+  integrity sha512-ni83JSEa/x2YKUJ3VYUv3XIST/fGiA60vtLvC5dW15bibxJfXD9++ZKf9G3quCNBlu58E9ZG3jJNJXy6JB6+/g==
+
 graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.4, graceful-fs@^4.2.6, graceful-fs@^4.2.9:
   version "4.2.10"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.10.tgz#147d3a006da4ca3ce14728c7aefc287c367d7a6c"
