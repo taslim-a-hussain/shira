@@ -1,6 +1,6 @@
 import { cap } from 'gokit';
 import React from 'react';
-import style from '../scss/button/index.module.scss';
+import style from '../../scss/button/index.module.scss';
 
 
 export interface ButtonProps {
@@ -24,7 +24,7 @@ export interface ButtonProps {
    * Optional click handler
    */
   onClick?: () => void;
-}
+};
 
 /**
  * Primary UI component for user interaction

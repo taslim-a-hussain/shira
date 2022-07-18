@@ -57,6 +57,6 @@
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "typed-scss": "typed-scss-modules src/scss"
+    "typed-scss": "typed-scss-modules src/scss/**/* -w"
   }
 }
