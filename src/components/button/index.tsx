@@ -24,6 +24,7 @@ export interface ButtonProps {
    * Optional click handler
    */
   onClick?: () => void;
+  onMouseOver?: () => void;
 };
 
 /**

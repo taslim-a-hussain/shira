@@ -1,7 +1,7 @@
-import {Reset} from './reset';
+import {Base} from './base';
 import {Button} from './button';
 
 export default {
-    Reset,
+    Base,
     Button
 }

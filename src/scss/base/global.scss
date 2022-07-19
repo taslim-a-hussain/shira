@@ -1,11 +1,39 @@
-/* Document
+/*! purgecss start ignore */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    box-sizing: border-box;
+  }
+
+ *, *:before, *:after {
+     box-sizing: inherit;
+ }
+  
+  /* Sections
+     ========================================================================== */
+  
+  /**
+   * Remove the margin in all browsers.
+   */
+  
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Document
    ========================================================================== */
 
   /**
    * Render the `main` element consistently in IE.
    */
   
-  main {
+   main {
     display: block;
   }
   

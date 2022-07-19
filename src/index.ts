@@ -1,6 +1,10 @@
 import shira from './components';
+import {Base} from './components/base';
 import {Button} from './components/button';
 
-export {Button};
+export {
+    Base,
+    Button
+};
 
 export default shira;
