@@ -2,7 +2,7 @@ import React, { FC, ReactNode } from 'react';
 import '../../scss/base/global.scss';
 import s from '../../scss/base/index.module.scss';
 
-export interface Props {
+export interface BaseProps {
     children: ReactNode,
     backgroundColor?: string,
     padding?: string,
@@ -11,7 +11,7 @@ export interface Props {
     style?: {}
 };
 
-export const Base: FC<Props> = ({
+export const Base: FC<BaseProps> = ({
     children, backgroundColor, padding, margin, bodyHeight=true, style, ...props
 }) => {
     return (
