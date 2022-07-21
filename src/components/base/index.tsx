@@ -1,6 +1,6 @@
 import React, { FC, ReactNode } from 'react';
-import '../../scss/base/global.scss';
-import s from '../../scss/base/index.module.scss';
+import './global.scss';
+import s from './base.module.scss';
 
 export interface BaseProps {
     children: ReactNode,

@@ -69,6 +69,6 @@
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
     "docs": "rimraf docs && NODE_ENV='production' build-storybook -o docs",
-    "typed-scss": "typed-scss-modules 'src/scss/**/*.scss' -w"
+    "typed-scss": "typed-scss-modules 'src/**/*.scss' -w"
   }
 }

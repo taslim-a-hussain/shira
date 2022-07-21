@@ -1,6 +1,6 @@
 import { cap } from 'gokit';
 import React from 'react';
-import style from '../../scss/button/index.module.scss';
+import style from './button.module.scss';
 
 
 export interface ButtonProps {
