@@ -1,0 +1,8 @@
+@use '../../scss/variables' as v;
+
+.card {
+    display: block;
+    padding: v.$space;
+    -webkit-box-shadow: 2px 0px 8px 2px gray; 
+    box-shadow: 2px 0px 8px 2px gray;
+}
