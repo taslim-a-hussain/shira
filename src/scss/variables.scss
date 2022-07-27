@@ -1,9 +1,39 @@
 // spacing
 $space: 4px;
 
+//  radius 
+$radius: 10px;
+
 // borders
 $border-thickness: 1px;
 $border-radius: 10px;
 
+// padding
+$padding: $space * 2;
+
+// margin
+$margin: $space;
+
 // fonts
 $font-size: 10px;
+
+// colors 
+$primary: #0d6efd;
+$secondary: #6c757d;
+$success: #198754;
+$info: #0dcaf0;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #212529;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);

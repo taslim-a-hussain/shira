@@ -1,8 +1,32 @@
 @use '../../scss/variables' as v;
+@use '../../scss//functions' as *;
+@use 'sass:map';
+
+
 
 .card {
     display: block;
-    padding: v.$space;
-    -webkit-box-shadow: 2px 0px 8px 2px gray; 
-    box-shadow: 2px 0px 8px 2px gray;
+    padding: v.$padding * 2;
+    border: v.$border-thickness solid v.$light;
+    -webkit-box-shadow: 2px 0px 8px 2px shade-color(v.$light, 35%); 
+    box-shadow: 2px 0px 8px 2px shade-color(v.$light, 35%);
+    border-radius: v.$radius;
+    margin: v.$space;
+    max-width: 500px;
+}
+
+.cardTitle {
+    font-size: 1.5rem;
+    color: map.get(v.$theme-colors, "secondary");
+    padding-bottom: v.$padding;
+    font-weight: bold;
+}
+
+.cardBody {
+    font-size: 1rem;
+
+    a {
+        text-decoration: none;
+        color: map.get(v.$theme-colors, "info");
+    }
 }
