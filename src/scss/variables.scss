@@ -17,6 +17,15 @@ $margin: $space;
 // fonts
 $font-size: 10px;
 
+// font sizes
+$font-baseline: 10px;
+$font-xs: $font-size * 1.4;
+$font-sm: $font-size * 1.6;
+$font-md: $font-size * 1.8;
+$font-lg: $font-size * 2;
+$font-xl: $font-size * 2.2;
+$font-xxl: $font-size * 2.4;
+
 // colors 
 $primary: #0d6efd;
 $secondary: #6c757d;

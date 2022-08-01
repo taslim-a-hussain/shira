@@ -16,14 +16,14 @@
 }
 
 .cardTitle {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     color: map.get(v.$theme-colors, "secondary");
     padding-bottom: v.$padding;
     font-weight: bold;
 }
 
 .cardBody {
-    font-size: 1rem;
+    font-size: 1em;
 
     a {
         text-decoration: none;
