@@ -2,3 +2,8 @@
 @function shade-color($color, $weight) {
     @return mix(black, $color, $weight);
   }
+
+// Shade a color: mix a color with black
+@function shadeColor($color, $weight) {
+    @return mix(black, $color, $weight);
+  }

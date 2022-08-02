@@ -4,10 +4,10 @@ import s from './base.module.scss';
 
 export interface BaseProps {
     children: ReactNode,
-    backgroundColor?: string,
-    padding?: string,
-    margin?: string,
-    bodyHeight?: boolean,
+    backgroundColor?: string;
+    padding?: string;
+    margin?: string;
+    bodyHeight?: boolean;
     style?: {}
 };
 

@@ -13,7 +13,7 @@ export default {
 } as ComponentMeta<typeof Card>;
 
 
-const Template: ComponentStory<typeof Card> = (args) => <Card />;
+const Template: ComponentStory<typeof Card> = (args) => <Card  {...args}/>;
 
 /** 
  * Base component resets the browser CSS
