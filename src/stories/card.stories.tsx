@@ -7,7 +7,7 @@ export default {
     title: 'Components/Card',
     component: Card,
     argTypes: {
-        backgroundColor: {control: 'color'},
+        backgroundColor: {control: 'color'}
     },
     decorators: [story => <Base padding="20px" bodyHeight={false}>{story()}</Base>]
 } as ComponentMeta<typeof Card>;

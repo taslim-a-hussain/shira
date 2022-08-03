@@ -7,10 +7,6 @@
 .card {
     display: block;
     padding: $padding * 2;
-    border: $border-thickness solid $light;
-    -webkit-box-shadow: 2px 0px 8px 2px shade-color($light, 35%); 
-    box-shadow: 2px 0px 8px 2px shade-color($light, 35%);
-    border-radius: $radius;
     margin: $space;
     max-width: 750px;
 }

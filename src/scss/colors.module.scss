@@ -1,0 +1,11 @@
+@use './variables.scss' as v;
+@use './functions.scss' as f;
+
+@each $key, $value in v.$theme-colors {
+    .txt#{$key} {
+        color: $value;
+    }
+    .bg#{$key} {
+        background-color: $value;
+    }
+}

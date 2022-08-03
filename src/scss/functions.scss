@@ -1,9 +1,15 @@
+
 // Shade a color: mix a color with black
 @function shade-color($color, $weight) {
     @return mix(black, $color, $weight);
   }
 
-// Shade a color: mix a color with black
-@function shadeColor($color, $weight) {
-    @return mix(black, $color, $weight);
-  }
+// Capitalize string
+// --------------------------------------------------------------------------------
+// @param [string] $string
+// --------------------------------------------------------------------------------
+// @return [string]
+
+@function capitalize($string) {
+  @return to-upper-case(str-slice($string, 1, 1)) + str-slice($string, 2);
+}
