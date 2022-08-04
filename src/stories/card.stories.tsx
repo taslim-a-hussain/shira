@@ -20,3 +20,9 @@ const Template: ComponentStory<typeof Card> = (args) => <Card  {...args}/>;
 */
 export const Default = Template.bind({});
 Default.storyName = 'By default';
+
+Default.args = {
+    allowHover: true,
+    boxShadow: true,
+    borderStyle: 'none'
+}

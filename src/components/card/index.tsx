@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, {FC, useState} from 'react';
 import s from './card.module.scss';
 const color = require('color');
 
@@ -8,6 +8,10 @@ export interface CardProps {
     titleColor?: string;
     bodyColor?: string;
     borderColor?: string;
+    allowHover?: boolean;
+    hoverBgColor?: string;
+    hoverTitleColor?: string;
+    hoverBodyColor?: string;
     borderStyle?: 'none' | 'solid' | 'dotted' | 'dashed' | 'double' | 'groove' | 'ridge' | 'inset' | 'outset';
     borderWidth?: number;
     borderRadius?: number;
@@ -24,12 +28,21 @@ export interface CardProps {
 
 
 export const Card: FC<CardProps> = ({
-    backgroundColor, titleColor, bodyColor, borderColor='#212529', borderStyle='solid', borderWidth=1, borderRadius=10, boxShadow=true, horizontalShadow=2, verticalShadow=0, blur=8, spread=2, shadowDarkness=0.35, style, titleStyle, bodyStyle, ...props
+    backgroundColor='#F3F8F2', titleColor='#6c757d', bodyColor='#757575', borderColor='#212529', allowHover=true, hoverBgColor='', hoverTitleColor='', hoverBodyColor='', borderStyle='none', borderWidth=1, borderRadius=10, boxShadow=true, horizontalShadow=2, verticalShadow=0, blur=8, spread=2, shadowDarkness=0.35, style, titleStyle, bodyStyle, ...props
 }) => {
+
+    const [hover, setHover] = useState(() => false);
+
+    const bgColor = hoverBgColor ? hoverBgColor : color(backgroundColor).darken(0.2);
+    const headerColor = hoverTitleColor ? hoverTitleColor : color(backgroundColor).rotate(180);
+    const contentColor = hoverBodyColor ? hoverBodyColor : color(backgroundColor).rotate(180);
+
     return (
         <div className={`${s.card}`}
+        onMouseEnter={() => setHover(() => true)}
+        onMouseLeave={() => setHover(() => false)}
         style={{
-            backgroundColor: backgroundColor && backgroundColor,
+            backgroundColor: allowHover && hover ? bgColor : backgroundColor,
             borderColor: borderColor && borderColor,
             borderStyle: borderStyle,
             borderWidth: borderWidth+'px',
@@ -41,11 +54,11 @@ export const Card: FC<CardProps> = ({
         {...props}
         >
             <div className={`${s.cardTitle}`} style={{
-                color: titleColor && titleColor,
+                color: allowHover && hover ? headerColor : titleColor,
                 ...titleStyle
             }}>Card Title</div>
             <div className={`${s.cardBody}`} style={{
-                color: bodyColor && bodyColor,
+                color: allowHover && hover ? contentColor : bodyColor,
                 ...bodyStyle
             }}>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, aperiam eveniet.Eos tempora <a href="#">This is a link</a> incidunt quaerat laborum eius aliquam fuga. Consectetur nemo incidunt porro explicabo ut quis voluptatibus expedita nihil officia.
