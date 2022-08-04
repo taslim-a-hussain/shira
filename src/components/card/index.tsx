@@ -34,8 +34,8 @@ export const Card: FC<CardProps> = ({
             borderStyle: borderStyle,
             borderWidth: borderWidth+'px',
             borderRadius: borderRadius+'px',
-            WebkitBoxShadow: boxShadow ? `${horizontalShadow}px ${verticalShadow}px ${blur}px ${spread}px ${color(borderColor).darken(shadowDarkness)}` : 'none',
-            boxShadow: boxShadow ? `${horizontalShadow}px ${verticalShadow}px ${blur}px ${spread}px ${color(borderColor).darken(shadowDarkness)}` : 'none',
+            WebkitBoxShadow: boxShadow ? `${horizontalShadow}px ${verticalShadow}px ${blur}px ${spread}px ${color(borderColor).darken(shadowDarkness)}`: 'none',
+            boxShadow: boxShadow ? `${horizontalShadow}px ${verticalShadow}px ${blur}px ${spread}px ${color(borderColor).darken(shadowDarkness)}`: 'none',
             ...style
         }}
         {...props}
