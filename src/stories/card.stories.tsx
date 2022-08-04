@@ -22,7 +22,18 @@ export const Default = Template.bind({});
 Default.storyName = 'By default';
 
 Default.args = {
+    backgroundColor: '#F3F8F2', 
+    titleColor: '#6c757d', 
+    bodyColor: '#757575', 
+    borderColor: '#212529',
     allowHover: true,
     boxShadow: true,
-    borderStyle: 'none'
+    borderStyle: 'none',
+    borderWidth: 1, 
+    borderRadius: 10, 
+    horizontalShadow: 2, 
+    verticalShadow: 0, 
+    blur: 8, 
+    spread: 2, 
+    shadowDarkness: 0.35
 }
