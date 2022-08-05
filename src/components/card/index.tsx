@@ -1,9 +1,11 @@
-import React, {FC, useState} from 'react';
+import React, {FC, ReactNode, useState} from 'react';
 import s from './card.module.scss';
 const color = require('color');
 
 
 export interface CardProps {
+    title?: string;
+    children?: ReactNode;
     backgroundColor?: string;
     titleColor?: string;
     bodyColor?: string;
@@ -28,6 +30,7 @@ export interface CardProps {
 
 
 export const Card: FC<CardProps> = ({
+    title='Card Title', children,
     backgroundColor='#F3F8F2', titleColor='#6c757d', bodyColor='#757575', borderColor='#212529', allowHover=true, hoverBgColor='', hoverTitleColor='', hoverBodyColor='', borderStyle='none', borderWidth=1, borderRadius=10, boxShadow=true, horizontalShadow=2, verticalShadow=0, blur=8, spread=2, shadowDarkness=0.35, style, titleStyle, bodyStyle, ...props
 }) => {
 
@@ -56,12 +59,12 @@ export const Card: FC<CardProps> = ({
             <div className={`${s.cardTitle}`} style={{
                 color: allowHover && hover ? headerColor : titleColor,
                 ...titleStyle
-            }}>Card Title</div>
+            }}>{title}</div>
             <div className={`${s.cardBody}`} style={{
                 color: allowHover && hover ? contentColor : bodyColor,
                 ...bodyStyle
             }}>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, aperiam eveniet.Eos tempora <a href="#">This is a link</a> incidunt quaerat laborum eius aliquam fuga. Consectetur nemo incidunt porro explicabo ut quis voluptatibus expedita nihil officia.
+                {children}
             </div>
         </div>
     );
