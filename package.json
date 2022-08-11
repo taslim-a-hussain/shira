@@ -62,6 +62,7 @@
     "react-dom": ">=16.14.0"
   },
   "dependencies": {
+    "classnames": "^2.3.1",
     "color": "^4.2.3",
     "gokit": "^1.0.4"
   },

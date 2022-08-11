@@ -2,10 +2,10 @@ import React, { FC } from 'react';
 import s from './container.module.scss';
 
 export interface ContainerProps {
-    children?: React.ReactNode,
-    fluid?: boolean,
-    backgroundColor?: string,
-    padding?: string,
+    children?: React.ReactNode;
+    fluid?: boolean;
+    backgroundColor?: string;
+    padding?: string;
     style?: {}
 };
 

@@ -1,0 +1,63 @@
+@use 'sass:math';
+@use './mixin.scss' as *;
+
+
+
+$grid-columns: 12;
+
+
+// Generate col classes
+@include xs {
+    @for $i from 1 through $grid-columns {
+        .xs#{$i} {
+            box-sizing: border-box;
+            // flex-grow: 0;
+            width: math.div($i * 100%, $grid-columns);
+        }
+    }
+}
+@include sm {
+    @for $i from 1 through $grid-columns {
+        .sm#{$i} {
+            box-sizing: border-box;
+            // flex-grow: 0;
+            width: math.div($i * 100%, $grid-columns);
+        }
+    }
+}
+@include md {
+    @for $i from 1 through $grid-columns {
+        .md#{$i} {
+            box-sizing: border-box;
+            // flex-grow: 0;
+            width: math.div($i * 100%, $grid-columns);
+        }
+    }
+}
+@include lg {
+    @for $i from 1 through $grid-columns {
+        .lg#{$i} {
+            box-sizing: border-box;
+            // flex-grow: 0;
+            width: math.div($i * 100%, $grid-columns);
+        }
+    }
+}
+@include xl {
+    @for $i from 1 through $grid-columns {
+        .xl#{$i} {
+            box-sizing: border-box;
+            // flex-grow: 0;
+            width: math.div($i * 100%, $grid-columns);
+        }
+    }
+}
+@include xxl {
+    @for $i from 1 through $grid-columns {
+        .xxl#{$i} {
+            box-sizing: border-box;
+            // flex-grow: 0;
+            width: math.div($i * 100%, $grid-columns);
+        }
+    }
+}
