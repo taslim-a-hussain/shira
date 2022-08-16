@@ -17,6 +17,16 @@ const Template: ComponentStory<typeof Row> = args => <Row {...args}>
     <Col>Column 1</Col>
     <Col>Column 2</Col>
     <Col>Column 3</Col>
+    <Col>Column 4</Col>
+    <Col>Column 5</Col>
+    <Col>Column 6</Col>
+    <Col>Column 7</Col>
+    <Col>Column 8</Col>
+    <Col>Column 9</Col>
+    <Col>Column 10</Col>
+    <Col>Column 11</Col>
+    <Col>Column 12</Col>
+    <Col>Column 13</Col>
 </Row>
 
 
