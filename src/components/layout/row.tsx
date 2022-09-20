@@ -7,16 +7,17 @@ export interface RowProps {
     fluid?: boolean,
     backgroundColor?: string,
     gap?: number,
+    columnGap?: number,
+    rowGap?: number,
     style?: {}
 };
 
-export const Row: React.FC<RowProps> = ({children, fluid=true, backgroundColor='transparent', gap=0, style, ...props}) => {
+export const Row: React.FC<RowProps> = ({children, fluid=true, backgroundColor='transparent', gap=0, columnGap=0, rowGap=0, style, ...props}) => {
 
 
     return (
         <div className={classnames(
             s.row,
-            s['gap'+gap],
             {
                 [s.fluidCols]: fluid
             }
@@ -24,6 +25,9 @@ export const Row: React.FC<RowProps> = ({children, fluid=true, backgroundColor='
         {...props}
         style={{
             backgroundColor: backgroundColor,
+            gap: `${gap}px`,
+            columnGap: `${columnGap}px`,
+            rowGap: `${rowGap}px`,
             ...style
         }}
         >

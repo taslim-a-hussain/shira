@@ -6,28 +6,3 @@
 .fluidCols > * {
     flex-grow: 1;
 }
-
-
-@for $i from 0 through 50 {
-    .gap#{$i} > * {
-        margin-right: #{$i}px;
-    }
-    .gap#{$i} {
-        margin-right: #{-$i}px;
-    }
-    .childPading#{$i} {
-        padding: #{$i}px;
-    }
-    .childPadingTop#{$i} {
-        padding-top: #{$i}px;
-    }
-    .childPadingBottom#{$i} {
-        padding-bottom: #{$i}px;
-    }
-    .childPadingRight#{$i} {
-        padding-right: #{$i}px;
-    }
-    .childPadingLeft#{$i} {
-        padding-left: #{$i}px;
-    }
-}

@@ -1,6 +1,6 @@
 {
   "name": "shira",
-  "version": "1.1.9",
+  "version": "1.2.0",
   "description": "UI components",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
